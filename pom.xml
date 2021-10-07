@@ -10,7 +10,7 @@
 
     <groupId>io.hetu.core</groupId>
     <artifactId>presto-root</artifactId>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.5.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>presto-root</name>
@@ -58,7 +58,7 @@
         <dep.prestosql.version>316</dep.prestosql.version>
         <dep.jackson.version>2.11.4</dep.jackson.version>
         <dep.hetu.version>${project.version}</dep.hetu.version>
-        <dep.jetty.version>9.4.38.v20210224</dep.jetty.version>
+        <dep.jetty.version>9.4.43.v20210629</dep.jetty.version>
         <dep.bcprov.version>1.66</dep.bcprov.version>
         <dep.hudi.version>0.7.0</dep.hudi.version>
         <!--
@@ -77,83 +77,82 @@
     </properties>
 
     <modules>
-        <module>presto-atop</module>
+<!--        <module>presto-atop</module>-->
         <module>presto-spi</module>
-        <module>presto-array</module>
-        <module>presto-jmx</module>
-        <module>presto-record-decoder</module>
-        <module>presto-expressions</module>
-        <module>presto-kafka</module>
+        <!-- <module>presto-array</module> -->
+        <!-- <module>presto-jmx</module> -->
+        <!-- <module>presto-record-decoder</module> -->
+        <!-- <module>presto-expressions</module> -->
+<!--        <module>presto-kafka</module>-->
         <module>presto-memory</module>
-        <module>presto-orc</module>
-        <module>presto-parquet</module>
-        <module>presto-rcfile</module>
-        <module>presto-hive</module>
-        <module>presto-hive-hadoop2</module>
-        <module>presto-teradata-functions</module>
-        <module>presto-example-http</module>
-        <module>presto-local-file</module>
-        <module>presto-tpch</module>
-        <module>presto-tpcds</module>
-        <module>presto-base-jdbc</module>
-        <module>presto-mysql</module>
-        <module>presto-postgresql</module>
-        <module>presto-sqlserver</module>
-        <module>presto-client</module>
+<!--        <module>presto-orc</module>-->
+<!--        <module>presto-parquet</module>-->
+<!--        <module>presto-rcfile</module>-->
+<!--        <module>presto-hive</module>-->
+<!--        <module>presto-hive-hadoop2</module>-->
+<!--        <module>presto-teradata-functions</module>-->
+<!--        <module>presto-example-http</module>-->
+<!--        <module>presto-local-file</module>-->
+        <!-- <module>presto-tpch</module> -->
+         <module>presto-tpcds</module> 
+<!--        <module>presto-base-jdbc</module>-->
+<!--        <module>presto-mysql</module>-->
+<!--        <module>presto-postgresql</module>-->
+<!--        <module>presto-sqlserver</module>-->
+        <!-- <module>presto-client</module> -->
         <module>presto-parser</module>
         <module>presto-main</module>
-        <module>presto-ml</module>
-        <module>presto-geospatial</module>
-        <module>presto-geospatial-toolkit</module>
-        <module>presto-benchmark</module>
-        <module>presto-testing-docker</module>
+<!--        <module>presto-ml</module>-->
+<!--        <module>presto-geospatial</module>-->
+        <!-- <module>presto-geospatial-toolkit</module> -->
+        <!-- <module>presto-benchmark</module> -->
+<!--        <module>presto-testing-docker</module>-->
         <module>presto-tests</module>
-        <module>presto-product-tests</module>
-        <module>presto-jdbc</module>
-        <module>presto-cli</module>
-        <module>presto-benchmark-driver</module>
+<!--        <module>presto-product-tests</module>-->
+<!--        <module>presto-jdbc</module>-->
+        <!-- <module>presto-cli</module> -->
+<!--        <module>presto-benchmark-driver</module>-->
         <!--        <module>presto-docs</module>-->
-        <module>presto-verifier</module>
-        <module>presto-testing-server-launcher</module>
-        <module>presto-plugin-toolkit</module>
-        <module>presto-resource-group-managers</module>
-        <module>presto-password-authenticators</module>
-        <module>presto-session-property-managers</module>
-        <module>presto-benchto-benchmarks</module>
-        <module>presto-thrift-api</module>
-        <module>presto-thrift-testing-server</module>
-        <module>presto-thrift</module>
-        <module>presto-matching</module>
-        <module>presto-memory-context</module>
-        <module>presto-proxy</module>
-        <module>presto-elasticsearch</module>
-        <module>hetu-hive-functions</module>
-        <module>hetu-oracle</module>
-        <module>hetu-vdm</module>
-        <module>hetu-heuristic-index</module>
-        <module>hetu-datacenter</module>
-        <module>hetu-hana</module>
-        <module>hetu-listener</module>
-        <module>hetu-seed-store</module>
-        <module>hetu-state-store</module>
-        <module>hetu-hbase</module>
-        <module>hetu-mongodb</module>
-        <module>hetu-carbondata</module>
-        <module>hetu-opengauss</module>
-        <module>hetu-filesystem-client</module>
-        <module>hetu-cube</module>
-        <module>hetu-startree</module>
-        <module>hetu-metastore</module>
-        <module>hetu-sql-migration-tool</module>
-        <module>hetu-transport</module>
-        <module>hetu-server</module>
-        <module>hetu-server-rpm</module>
+<!--        <module>presto-verifier</module>-->
+<!--        <module>presto-testing-server-launcher</module>-->
+<!--        <module>presto-plugin-toolkit</module>-->
+        <!-- <module>presto-resource-group-managers</module> -->
+        <!-- <module>presto-password-authenticators</module> -->
+        <!-- <module>presto-session-property-managers</module> -->
+<!--        <module>presto-benchto-benchmarks</module>-->
+<!--        <module>presto-thrift-api</module>-->
+<!--        <module>presto-thrift-testing-server</module>-->
+<!--        <module>presto-thrift</module>-->
+        <!-- <module>presto-matching</module> -->
+        <!-- <module>presto-memory-context</module> -->
+<!--        <module>presto-proxy</module>-->
+<!--        <module>presto-elasticsearch</module>-->
+<!--        <module>hetu-hive-functions</module>-->
+<!--        <module>hetu-oracle</module>-->
+<!--        <module>hetu-vdm</module>-->
+<!--        <module>hetu-heuristic-index</module>-->
+<!--        <module>hetu-datacenter</module>-->
+<!--        <module>hetu-hana</module>-->
+        <!-- <module>hetu-listener</module> -->
+        <!-- <module>hetu-seed-store</module> -->
+        <!-- <module>hetu-state-store</module> -->
+<!--        <module>hetu-hbase</module>-->
+<!--        <module>hetu-mongodb</module>-->
+<!--        <module>hetu-carbondata</module>-->
+<!--        <module>hetu-opengauss</module>-->
+        <!-- <module>hetu-filesystem-client</module> -->
+        <!-- <module>hetu-cube</module> -->
+<!--        <module>hetu-startree</module>-->
+			<!-- <module>hetu-metastore</module> -->
+<!--        <module>hetu-sql-migration-tool</module>-->
+        <!-- <module>hetu-transport</module> -->
+<!--        <module>hetu-server</module>-->
+<!--        <module>hetu-server-rpm</module>-->
         <module>hetu-common</module>
-        <module>hetu-hazelcast</module>
-        <module>hetu-function-namespace-managers</module>
-        <module>hetu-greenplum</module>
-        <module>hetu-clickhouse</module>
-        <module>hetu-kylin</module>
+<!--        <module>hetu-hazelcast</module>-->
+<!--        <module>hetu-function-namespace-managers</module>-->
+<!--        <module>hetu-greenplum</module>-->
+<!--        <module>hetu-clickhouse</module>-->
     </modules>
 
     <dependencyManagement>
@@ -1707,6 +1706,7 @@
                             <item>${air.main.basedir}/src/main/resource/license/license-header-alternate-2010.txt</item>
                             <item>${air.main.basedir}/src/main/resource/license/license-header-alternate-2012.txt</item>
                             <item>${air.main.basedir}/src/main/resource/license/license-header-alternate-2020.txt</item>
+                            <item>${air.main.basedir}/src/main/resource/license/license-header-alternate-2021.txt</item>
                             <item>${air.main.basedir}/src/main/resource/license/license-header-third.txt</item>
                         </validHeaders>
                     </configuration>
